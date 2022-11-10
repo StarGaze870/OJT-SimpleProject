@@ -1,0 +1,46 @@
+CREATE DATABASE MiniCart;
+
+GO;
+
+USE MiniCart;
+
+GO;
+
+CREATE TABLE ItemData (
+
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	itemName CHAR(255),
+	quantity int,
+	price MONEY,
+	image IMAGE
+);
+
+-- INSERTING DATA
+INSERT INTO ItemData VALUES('ItemName', 69, 4.99 ,'');
+
+-- UPDATING DATA
+UPDATE ItemData SET itemName = '', quantity = 1, price = 1.50, image = '' WHERE id = 1;
+
+-- DELETE DATA
+DELETE FROM ItemData WHERE id = 1;
+
+-- SELECT ALL DATA
+SELECT * FROM ItemData;
+
+-- SELECT ONE DATA
+SELECT * FROM ItemData WHERE id = 1;
+
+-- SEARCH DATA BY ITEM NAME OR ID
+SELECT * FROM ItemData WHERE itemName LIKE '18%' OR id LIKE '18%';
+
+-- SELECT MULTIPLE DATA
+SELECT * FROM ItemData WHERE id in (3, 2);
+
+-- TOTAL DATA
+SELECT COUNT(*) FROM ItemData;
+
+-- DELETE ALL DATA
+TRUNCATE TABLE ItemData;
+
+-- DROP TABLE
+DROP TABLE ItemData;
