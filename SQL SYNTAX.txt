@@ -1,19 +1,17 @@
 CREATE DATABASE MiniCart;
-
-GO;
+GO
 
 USE MiniCart;
-
-GO;
+GO
 
 CREATE TABLE ItemData (
-
-	id INT IDENTITY(1, 1) PRIMARY KEY,
-	itemName CHAR(255),
-	quantity int,
-	price MONEY,
-	image IMAGE
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    itemName CHAR(255),
+    quantity INT,
+    price MONEY,
+    image IMAGE
 );
+GO
 
 -- INSERTING DATA
 INSERT INTO ItemData VALUES('ItemName', 69, 4.99 ,'');

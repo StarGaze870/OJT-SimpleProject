@@ -1,0 +1,57 @@
+# Ignore the bin and obj folders (build outputs)
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore project-specific generated files
+*.vs/
+*.vscode/
+*.dbmdl
+*.log
+*.tlog
+*.cache
+*.pdb
+*.opendb
+*.ide
+
+# Ignore build results
+*.dll
+*.exe
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.wappx
+*.manifest
+*.map
+*.out
+*.publish/
+*.vsix
+*.vsixmanifest
+*.msp
+*.msm
+*.merge/obj/
+
+# Ignore NuGet packages and related files
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore JetBrains Rider files
+.idea/
+
+# Ignore Visual Studio Code specific files
+.vscode/
+
+# Ignore temporary files
+~$*
+*.tmp
+*.temp
